@@ -1,12 +1,21 @@
 #include <iostream>
-using std::cin;
-using std::cout;
+using namespace std;
 
 const int SIZE = 5; // input size.
 
 int main(void)
 {
-    // TODO: Adicione aqui seu código.
+  int numero;
+  int qtd_negativos = 0;
+  for(int i=0; i<5; i++){
+    cin>>numero;
 
-    return 0;
+    if(numero < 0){
+      qtd_negativos++;
+    }
+  }
+
+  cout<<qtd_negativos;
+
+  return 0;
 }
