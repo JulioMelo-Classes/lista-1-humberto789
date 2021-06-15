@@ -10,7 +10,35 @@ using std::endl;
 
 int main( void )
 {
-    // TODO: Adicione seu código aqui. 
+    int valor;
+    int posicoes;
+
+    while(true){
+
+      cin>>valor;
+      cin>>posicoes;
+      int resultado = 0;
+
+      if(posicoes>1000 | posicoes<-1000){
+        return 0;
+      }
+      else if(posicoes > 0){
+        for(int i = 0; i<posicoes; i++){
+          resultado = resultado + valor + i;
+        }
+      }else if(posicoes < 0){
+        for(int i = 0; i>posicoes; i--){
+          resultado = resultado + valor + i;
+        }
+      }else if(posicoes == 0){
+        resultado = valor;
+      }
+
+      posicoes=10000;
+
+      cout<<resultado<<endl;
+
+    }
 
     return 0;
 }
