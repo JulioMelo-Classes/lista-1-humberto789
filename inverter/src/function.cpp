@@ -8,7 +8,17 @@ using std::iter_swap;
  * @param arr Reference to the array with the values.
  */
 template <size_t SIZE>
-void reverse( std::array< std::string, SIZE > & arr )
-{
-    /*codigo*/
+void reverse( std::array< std::string, SIZE > & arr ){
+  std::string aux;
+  int i = 0, j = (int) SIZE - 1;
+
+  while(i < j){
+    aux = arr[i];
+    arr[i] = arr[j];
+    arr[j] = aux;
+    i++;
+    j--;
+
+  }
 }
+
