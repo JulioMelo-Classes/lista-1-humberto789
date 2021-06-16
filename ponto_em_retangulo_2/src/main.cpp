@@ -1,4 +1,4 @@
-/*!
+ /*!
  * @brief Implementação do Ponto em Retângulo V2.
  * @author selan
  * @data June, 6th 2021
@@ -21,7 +21,28 @@ using std::max;
 
 int main(void)
 {
-    // TODO: Adicione aqui seu código.
+    Ponto r1;
+    Ponto r2;
+    Ponto p;
+
+    int x;
+
+    while( cin >> std::ws >> r1.x && cin >> std::ws >> r1.y && cin >> std::ws >> r2.x && cin >> std::ws >> r2.y && cin >> std::ws >> p.x && cin >> std::ws >> p.y) {
+
+      if(!(r1.x==r2.x && r1.y==r2.y)){
+        location_t resultado = pt_in_rect(r1, r2, p);
+
+        if(location_t::INSIDE == resultado){
+          cout << "inside" << endl;
+        }else if(location_t::BORDER == resultado){
+          cout << "border" << endl;
+        }else if(location_t::OUTSIDE == resultado){
+          cout << "outside" << endl;
+        }
+      }
+      
+    }
+
 
     return 0;
 }
