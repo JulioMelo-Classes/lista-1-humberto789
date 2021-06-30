@@ -1,5 +1,6 @@
 #include "function.h"
 
+/*ok*/
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
     // TODO: adicione o seu código aqui.
@@ -13,7 +14,7 @@ std::vector<unsigned int> fib_below_n( unsigned int n )
       vetor.push_back(1);
       if(n>=3){
         while(true){                          
-          soma = primeira_seq + segunda_seq;                    
+          soma = primeira_seq + segunda_seq;//ao invés de usar assim vc poderia simplesmente usar os elementos do vetor
           primeira_seq = segunda_seq;                           
           segunda_seq = soma;
           if(segunda_seq<n){

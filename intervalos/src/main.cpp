@@ -28,6 +28,9 @@ double calcular_porcentagem(int numero_total, int numero_parcial ){
   return resultado;
 }
 
+/*
+ok! boa ideia fazer uma função que verifica um intervalo!
+*/
 int main(void)
 {
     int numero, qtd_numeros=0;

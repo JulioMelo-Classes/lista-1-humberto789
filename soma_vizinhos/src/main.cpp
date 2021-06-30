@@ -8,6 +8,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+/*blz!*/
 int main( void )
 {
     int valor;

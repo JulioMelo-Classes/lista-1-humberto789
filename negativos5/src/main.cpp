@@ -3,6 +3,9 @@ using namespace std;
 
 const int SIZE = 5; // input size.
 
+/*
+ok!
+*/
 int main(void)
 {
   int numero;

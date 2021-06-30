@@ -19,6 +19,9 @@ using std::max;
 // Coloque aqui qualquer função auxiliar que desejar.
 
 
+/*
+faltou validar a entrada, vou considerar 80%
+*/
 int main(void)
 {
     Ponto r1;
